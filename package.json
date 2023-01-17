@@ -1,0 +1,17 @@
+{
+  "name": "logrocket_nwjs_example",
+  "version": "1.0.0",
+  "description": "A demo app to show how NW.js works",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "start-nw": "nw  --remote-debugging-port=9222 src/",
+    "build-nw": "nwbuild --platforms win64,osx64,linux64 --buildDir dist/ src/"
+  },
+ 
+  "dependencies": {
+    "express": "^4.17.1",
+    "nw": "^0.44.6",
+    "nw-builder": "^3.5.7"
+  }
+}

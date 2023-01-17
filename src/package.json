@@ -1,0 +1,25 @@
+{
+  "name": "nwjs_example",
+  "version": "1.0.0",
+  "description": "A demo app to show how NW.js works",
+  "main": "index.html",
+  "window": {
+    "transparent": true,
+    "frame": false,
+    "kiosk": false,
+    "show_in_taskbar": false,
+    "fullscreen": false,
+    "always_on_top": true,
+    "resizable": false,
+    "position": "center",
+    "width": 1000,
+    "height": 1000,
+    "toolbar": false,
+    "title": "WfxNWWindow"
+  },
+  "chromium-args": "--high-dpi-support=1 --force-device-scale-factor=1",
+  "domain":"harshith",
+  "node-remote": [
+    "file:///*", "http://*", "https://*"
+  ]
+}
